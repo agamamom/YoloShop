@@ -15,12 +15,16 @@ html {
 }
 
 body {
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 a {
     text-decoration: none;
     color: unset;
+}
+
+a:hover {
+    color: $main-color;
 }
 
 @each $color,
@@ -84,4 +88,8 @@ $val in $colors {
     @include mobile {
         margin-top: calc(#{$header-mobile-height} + 10px);
     }
+}
+
+.grid {
+    display: grid;
 }

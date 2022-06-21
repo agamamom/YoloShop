@@ -10,8 +10,6 @@ import Cart from '../pages/Cart'
 import Product from '../pages/Product'
 import Home from '../pages/Home'
 
-import Routess from '../routes/Routess'
-
 const Layout = () => {
     return (
         <BrowserRouter>
@@ -23,17 +21,6 @@ const Layout = () => {
                 <Route path='/cart' element={<Cart />} />
             </Routes>
             <Footer />
-            {/* <Route render={props => (
-                <div>
-                    <Header {...props} />
-                    <div className="container">
-                        <div className="main">
-                            <Routess />
-                        </div>
-                    </div>
-                    <Footer />
-                </div>
-            )} /> */}
         </BrowserRouter>
 
     )

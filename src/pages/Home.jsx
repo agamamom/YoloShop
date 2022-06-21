@@ -1,12 +1,12 @@
 import React from 'react'
+import Helmet from '../components/Helmet'
+import HeroSlider from '../components/HeroSlider'
 
 const Home = () => {
     return (
-        <div className="container">
-            <div className="main">
-                <h1>home</h1>
-            </div>
-        </div>
+        <Helmet title='Trang chủ'>
+            <HeroSlider />
+        </Helmet>
     )
 }
 

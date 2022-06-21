@@ -1,12 +1,11 @@
 import React from 'react'
+import Helmet from '../components/Helmet'
 
 const Catalog = () => {
     return (
-        <div className="container">
-            <div className="main">
-                <h1>catalog</h1>
-            </div>
-        </div>
+        <Helmet title="Sản Phẩm">
+            Catalog
+        </Helmet>
     )
 }
 
