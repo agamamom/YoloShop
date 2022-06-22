@@ -1,19 +1,20 @@
 import React from 'react'
 
-import { Routes, Route } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
+
+import Home from '../pages/Home'
 import Catalog from '../pages/Catalog'
 import Cart from '../pages/Cart'
 import Product from '../pages/Product'
-import Home from '../pages/Home'
 
 const Routess = () => {
     return (
-        <Routes>
-            <Route path='/' exact element={<Home />} />
-            <Route path='/catalog/:slug' element={<Product />} />
-            <Route path='/catalog' element={<Catalog />} />
-            <Route path='/cart' element={<Cart />} />
-        </Routes>
+        <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/catalog/:slug' component={Product} />
+            <Route path='/catalog' component={Catalog} />
+            <Route path='/cart' component={Cart} />
+        </Switch>
     )
 }
 
